@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+/* Page Layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Light Mode Background */
+body.light-mode {
+  background-image: url('/assets/light-theme.jfif'); /* ✅ Fixed path */
+  color: black;
+}
+
+/* Dark Mode Background */
+body.dark-mode {
+  background-image: url('/assets/dark-theme.jfif'); /* ✅ Fixed path */
+  background-color: #121212; /* Ensures background in case image fails */
+  color: white;
+}
+
+/* Ensure Dark Mode Overrides */
+.dark-mode {
+  background: none; /* Prevents previous overrides */
+}
+
+/* Navbar Wrapper (Covers Left Half of Screen) */
+.navbar-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 79%; /* Moves navbar to cover half the left page */
+  transform: translate(-50%, -50%);
+  width: 50vw; /* Covers half the page */
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Picture (Fixed at Center, Bigger) */
+.profile-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid rgb(21, 111, 230);
+}
+
+/* Rotating Navbar */
+.rotating-navbar {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+/* Navbar Links (Circular, Stay Upright) */
+.nav-item {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 2px solid #f1f3fa;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(8, 5, 17);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-item:hover {
+  background: #eef0ee;
+  color: rgb(1, 17, 2);
+  box-shadow: 0 0 10px rgb(3, 42, 75);
+}
+
+/* Active Page Stays Highlighted */
+.nav-item.active {
+  background: rgb(6, 200, 235);
+  color: black;
+  box-shadow: 0 0 15px white;
+}
+@import "tailwindcss";
+
+/* Default Light Theme */
+body {
+  background: white;
+  color: black;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: black;
+  color: white;
+}
+
+/* Center Theme Toggle Button */
+.theme-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.theme-toggle {
+  font-size: 1.2rem;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Light Theme Button */
+body:not(.dark-mode) .theme-toggle {
+  background: brightblue;
+  color: white;
+}
+
+/* Dark Theme Button */
+.dark-mode .theme-toggle {
+  background: lightpurple;
+  color: rgb(240, 238, 248);
+}
+/* Move Home Content 30px from the Right */
+.content {
+  margin-left: 30px;
+}
