@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../App.css";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/Ray-Ban.jfif";
 
 const Navbar = () => {
   const [rotation, setRotation] = useState(0);

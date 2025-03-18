@@ -18,8 +18,8 @@ const Home = () => {
 
   return (
     <div className="content">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I am a passionate developer eager to build amazing web experiences.</p>
+      <h1>Hi, I'm Alexander Smith,</h1>
+      <p>A passionate web developer dedicated to crafting clean, efficient, and user-friendly digital experiences. With a strong background in front-end and back-end development, I specialize in building responsive websites and dynamic web applications that bring ideas to life. I thrive on solving complex problems with code, staying updated with the latest technologies, and delivering high-quality solutions that meet both user needs and business goals. Whether it's developing sleek UI designs, optimizing performance, or creating seamless user interactions, I’m always excited to take on new challenges and push the boundaries of web development.</p>
 
       {/* Theme Toggle Button */}
       <div className="theme-toggle-container">

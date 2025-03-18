@@ -11,13 +11,13 @@ body {
 
 /* Light Mode Background */
 body.light-mode {
-  background-image: url('/assets/light-theme.jfif'); /* ✅ Fixed path */
+  background-image: url('/assets/light.jfif'); /* ✅ Fixed path */
   color: black;
 }
 
 /* Dark Mode Background */
 body.dark-mode {
-  background-image: url('/assets/dark-theme.jfif'); /* ✅ Fixed path */
+  background-image: url('/assets/dark.jfif'); /* ✅ Fixed path */
   background-color: #121212; /* Ensures background in case image fails */
   color: white;
 }
@@ -85,15 +85,15 @@ body.dark-mode {
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
-  color: rgb(8, 5, 17);
+  color: rgb(68, 13, 235);
   transition: all 0.3s ease-in-out;
 }
 
 /* Hover Effect */
 .nav-item:hover {
   background: #eef0ee;
-  color: rgb(1, 17, 2);
-  box-shadow: 0 0 10px rgb(3, 42, 75);
+  color: #590580;
+  box-shadow: 0 0 10px rgb(4, 60, 105);
 }
 
 /* Active Page Stays Highlighted */
@@ -150,5 +150,152 @@ body:not(.dark-mode) .theme-toggle {
 }
 /* Move Home Content 30px from the Right */
 .content {
+  top: 15%;
   margin-left: 30px;
+  margin-right: 600px;
+}
+/* About section styling */
+.about-me {
+  margin-top: 10px;
+  color: inherit;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 400px;
+  text-align: justify;
+  margin-right: 10px;
+
+}
+
+/* Profile Image */
+.profile-img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  margin-left:3px;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Layout for About Section */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-me {
+    max-width: 100%;
+  }
+
+  .profile-img {
+    margin-top: 20px;
+   
+  }
+}
+/* Contact Page Layout */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Contact Information Box */
+.contact-info {
+  max-width: 350px;
+  color: white;
+}
+
+/* Form Box */
+.contact-form {
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  background-color: #374151;
+  color: white;
+  border: 1px solid #4b5563;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  transition: border 0.3s ease-in-out;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-info {
+      text-align: center;
+  }
+
+  .contact-form {
+      width: 90%;
+  }
 }
