@@ -150,7 +150,7 @@ body:not(.dark-mode) .theme-toggle {
 }
 /* Move Home Content 30px from the Right */
 .content {
-  top: 15%;
+  top: 10%;
   margin-left: 30px;
   margin-right: 600px;
 }
@@ -298,4 +298,73 @@ body:not(.dark-mode) .theme-toggle {
   .contact-form {
       width: 90%;
   }
+}
+/* Center the project container */
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  width: 100%;
+}
+
+/* Fixed size for the project content */
+.project-content {
+  width: 450px; /* Set a fixed width */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  border-radius: 10px;
+}
+
+/* Consistent image size */
+.project-image {
+  width: 100%; /* Make it fill the container */
+  height: 250px; /* Fixed height */
+  object-fit: cover; /* Ensures uniform cropping */
+  border-radius: 8px;
+}
+
+/* Styling for project title */
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Styling for description */
+.project-description {
+  font-size: 14px;
+  color: hsl(0, 17%, 98%);
+  margin-top: 5px;
+}
+
+/* GitHub link */
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #090c0f;
+  font-weight: bold;
+}
+
+/* Navigation buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.nav-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  background-color: #070e14;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
 }
