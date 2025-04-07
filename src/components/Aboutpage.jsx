@@ -30,6 +30,16 @@ const About = () => {
         >
           Download CV
         </a>
+          {/* View Button */}
+        <a
+          href="/assets/Alistairs_Munene_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="view-resume-btn bg-green-600 text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-green-700 transition"
+          onClick={() => console.log("Resume opened in a new tab!")}
+        >
+           View CV
+  </a>
       </div>
 
       {/* Right Section - Image */}
